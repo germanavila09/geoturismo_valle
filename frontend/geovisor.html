@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geodata Turismo - Observatorio GeoTurismo</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="geovisor.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar" aria-label="Navegacion principal">
+      <a class="sidebar-logo" href="index.html" aria-label="Volver al piloto GeoTurismo">
+        <span class="logo-mark">
+          <span class="logo-hex" aria-hidden="true"></span>
+          <span class="logo-name">Geodata<span>Turismo</span></span>
+        </span>
+        <span class="logo-sub">Observatorio GeoTurismo - Valle del Cauca</span>
+      </a>
+
+      <section class="sidebar-filter" aria-label="Lineas turisticas">
+        <p class="filter-label">Linea / tourism layer</p>
+        <button class="pill active" type="button">Oportunidad</button>
+        <button class="pill disabled" type="button" disabled>Eventos prox.</button>
+        <button class="pill disabled" type="button" disabled>Alojamientos prox.</button>
+      </section>
+
+      <a class="platform-entry" href="../../../platform/frontend/index.html">
+        <span aria-hidden="true">↗</span>
+        Inicio plataforma SIG
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Modulos GeoTurismo">
+        <a class="nav-item" href="index.html"><span class="nav-icon">▦</span>Panel</a>
+        <a class="nav-item active" href="geovisor.html"><span class="nav-icon">◇</span>Geovisor</a>
+        <a class="nav-item" href="indicadores.html"><span class="nav-icon">▥</span>Indicadores</a>
+        <a class="nav-item" href="#tendencias"><span class="nav-icon">⌁</span>Tendencias</a>
+        <a class="nav-item" href="#priorizacion"><span class="nav-icon">◈</span>Priorizacion</a>
+        <a class="nav-item muted" href="#rutas"><span class="nav-icon">⬢</span>Rutas</a>
+        <a class="nav-item muted" href="#ia"><span class="nav-icon">◎</span>IA & ML <b>BETA</b></a>
+        <a class="nav-item muted" href="#asistente"><span class="nav-icon">⊙</span>Asistente IA <b>NEW</b></a>
+      </nav>
+
+      <footer class="sidebar-footer">
+        <strong>Universidad del Valle</strong>
+        <span>Laboratorio TerrarIA</span>
+        <span>Valle del Cauca, Colombia</span>
+        <span>v0.1 - piloto</span>
+      </footer>
+    </aside>
+
+    <main id="main">
+      <header id="header">
+        <div>
+          <h1>Geovisor</h1>
+          <div id="year-progress" aria-hidden="true"></div>
+        </div>
+        <div class="header-controls">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-txt">Live - piloto estatico</span>
+          <label class="header-label" for="year-select">Anio:</label>
+          <select id="year-select" class="header-select">
+            <option value="2025">2025</option>
+            <option value="2026" selected>2026</option>
+          </select>
+          <a class="header-btn" href="index.html">ES</a>
+        </div>
+      </header>
+
+      <section id="geovisor-wrap" aria-label="Geovisor turistico">
+        <aside id="map-sidebar" aria-label="Controles del mapa">
+          <div>
+            <p class="map-ctrl-label">Variable</p>
+            <select id="variable-select">
+              <option value="oportunidad">Indice de oportunidad</option>
+              <option value="atractivos">Atractivos turisticos</option>
+              <option value="diversidad">Diversidad de tipos</option>
+              <option value="visitantes">Visitantes</option>
+              <option value="gasto">Gasto estimado</option>
+              <option value="accesibilidad">Accesibilidad</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="map-ctrl-label">Tipo de turismo</p>
+            <select id="type-select">
+              <option value="todos">Todos los tipos</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="map-ctrl-label">Modo / mode</p>
+            <div class="map-ctrl-group" role="group" aria-label="Modo de mapa">
+              <button class="map-mode-btn active" type="button" data-mode="burbujas">⊙ Burbujas</button>
+              <button class="map-mode-btn" type="button" data-mode="atractivos">+ Atractivos</button>
+              <button class="map-mode-btn" type="button" data-mode="coropletico">▦ Coropletico</button>
+              <button class="map-mode-btn" type="button" data-mode="calor">◎ Calor</button>
+              <button class="map-mode-btn" type="button" data-mode="rutas">↕ Rutas</button>
+              <button class="map-mode-btn" type="button" data-mode="cambio">↕ Cambio 2025-26</button>
+            </div>
+          </div>
+
+          <label class="cali-row">
+            <input id="include-cali" type="checkbox" checked>
+            Incluir Cali
+          </label>
+
+          <section aria-label="Estadisticas">
+            <p class="map-ctrl-label">Estadisticas</p>
+            <div id="map-stats">
+              <div class="map-stat">
+                <strong id="summary-total" class="map-stat-val">0</strong>
+                <span id="summary-total-label" class="map-stat-lbl">visitantes 2026</span>
+              </div>
+              <div class="map-stat">
+                <strong id="summary-average" class="map-stat-val">0.00</strong>
+                <span id="summary-average-label" class="map-stat-lbl">promedio</span>
+              </div>
+              <div class="map-stat">
+                <strong id="summary-count" class="map-stat-val">0</strong>
+                <span class="map-stat-lbl">municipios</span>
+              </div>
+            </div>
+          </section>
+
+          <section aria-label="Ranking de destinos">
+            <p class="map-ctrl-label">Ranking piloto</p>
+            <ol id="ranking-list" class="ranking-list"></ol>
+          </section>
+
+          <section class="map-legend-panel" aria-label="Leyenda">
+            <p class="map-ctrl-label">Leyenda</p>
+            <div class="map-legend" id="legend-list"></div>
+          </section>
+
+          <div class="source-block">
+            <p class="map-ctrl-label">Fuente</p>
+            <span>◊ PostgreSQL ready</span>
+          </div>
+        </aside>
+
+        <section class="map-stage" aria-label="Mapa de oportunidad turistica">
+          <div id="map"></div>
+          <div class="map-note">
+            <strong id="summary-leader">Destino lider: -</strong>
+            <span>Prototipo basado en datos de muestra. La capa se reemplazara por PostGIS cuando la base este lista.</span>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="geoturismo-municipios.js"></script>
+  <script src="geoturismo-data.js"></script>
+  <script src="geovisor.js"></script>
+</body>
+</html>

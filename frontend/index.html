@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geodata Turismo - Panel</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar" aria-label="Navegacion principal">
+      <a class="sidebar-logo" href="index.html" aria-label="Panel GeoTurismo">
+        <span class="logo-mark">
+          <span class="logo-hex" aria-hidden="true"></span>
+          <span class="logo-name">Geodata<span>Turismo</span></span>
+        </span>
+        <span class="logo-sub">Observatorio GeoTurismo - Valle del Cauca</span>
+      </a>
+
+      <section class="sidebar-filter" aria-label="Lineas turisticas">
+        <p class="filter-label">Linea / tourism layer</p>
+        <button class="pill active" type="button">Oportunidad</button>
+        <button class="pill disabled" type="button" disabled>Eventos prox.</button>
+        <button class="pill disabled" type="button" disabled>Alojamientos prox.</button>
+      </section>
+
+      <a class="platform-entry" href="../../../platform/frontend/index.html">
+        <span aria-hidden="true">↗</span>
+        Inicio plataforma SIG
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Modulos GeoTurismo">
+        <a class="nav-item active" href="index.html"><span class="nav-icon">▦</span>Panel</a>
+        <a class="nav-item" href="geovisor.html"><span class="nav-icon">◇</span>Geovisor</a>
+        <a class="nav-item" href="indicadores.html"><span class="nav-icon">▥</span>Indicadores</a>
+        <a class="nav-item" href="#tendencias"><span class="nav-icon">⌁</span>Tendencias</a>
+        <a class="nav-item" href="#priorizacion"><span class="nav-icon">◈</span>Priorizacion</a>
+        <a class="nav-item muted" href="#rutas"><span class="nav-icon">⬢</span>Rutas</a>
+        <a class="nav-item muted" href="#ia"><span class="nav-icon">◎</span>IA & ML <b>BETA</b></a>
+        <a class="nav-item" href="#asistente"><span class="nav-icon">⊙</span>Asistente IA <b>NEW</b></a>
+      </nav>
+
+      <footer class="sidebar-footer">
+        <strong>Universidad del Valle</strong>
+        <span>Laboratorio TerrarIA</span>
+        <span>Valle del Cauca, Colombia</span>
+        <span>v0.1 - piloto</span>
+      </footer>
+    </aside>
+
+    <main id="main">
+      <header id="header">
+        <div>
+          <h1>Panel</h1>
+          <div id="year-progress" aria-hidden="true"></div>
+        </div>
+        <div class="header-controls">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-txt">Live - PostgreSQL</span>
+          <label class="header-label" for="year-select">Anio:</label>
+          <select id="year-select" class="header-select"></select>
+          <label class="header-label" for="type-select">Tipo:</label>
+          <select id="type-select" class="header-select"></select>
+          <label class="header-label" for="municipality-select">Municipio:</label>
+          <select id="municipality-select" class="header-select"></select>
+          <label class="header-label" for="metric-select">Metrica:</label>
+          <select id="metric-select" class="header-select">
+            <option value="atractivos">Atractivos</option>
+            <option value="visitantes">Visitantes</option>
+            <option value="oportunidad">Oportunidad</option>
+            <option value="gasto">Gasto</option>
+          </select>
+          <a class="header-btn" href="geovisor.html">Mapa</a>
+        </div>
+      </header>
+
+      <section class="dashboard" aria-label="Panel de control GeoTurismo">
+        <div class="dashboard-title">
+          <div>
+            <h2>Panel de control</h2>
+            <p id="panel-subtitle">Valle del Cauca · Inventario turistico territorial</p>
+          </div>
+          <p class="source-note">Fuente: PostgreSQL · turismo_municipal · atractivos_turisticos · valle_mun</p>
+        </div>
+
+        <section class="kpi-grid" aria-label="Indicadores principales">
+          <article class="kpi-card">
+            <div class="kpi-top"><span>◇</span><i id="spark-attractions"></i></div>
+            <strong id="kpi-attractions">0</strong>
+            <span>Atractivos registrados</span>
+            <small>inventario georreferenciado</small>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top"><span>◎</span><i id="spark-types"></i></div>
+            <strong id="kpi-types">0</strong>
+            <span>Tipos de turismo</span>
+            <small>tipologias principales</small>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top"><span>◉</span><i id="spark-muni"></i></div>
+            <strong id="kpi-municipalities">0</strong>
+            <span>Municipios con oferta</span>
+            <small>con al menos un atractivo</small>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top"><span>◆</span><b id="kpi-top-type-delta">Top</b></div>
+            <strong id="kpi-top-type">-</strong>
+            <span>Tipo predominante</span>
+            <small id="kpi-top-type-sub">mayor numero de atractivos</small>
+          </article>
+        </section>
+
+        <section class="charts-grid">
+          <article class="chart-card wide">
+            <div class="chart-title">
+              <h3>Visitantes por anio</h3>
+              <span id="visitors-total">0 visitantes</span>
+            </div>
+            <div id="year-bars" class="bar-chart" aria-label="Visitantes por anio"></div>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-title">
+              <h3>Top municipios</h3>
+              <span>atractivos</span>
+            </div>
+            <div id="top-municipalities" class="rank-chart" aria-label="Top municipios por atractivos"></div>
+          </article>
+
+          <article class="chart-card" id="indicadores">
+            <div class="chart-title">
+              <h3>Tipos de turismo</h3>
+              <span>distribucion</span>
+            </div>
+            <div id="type-bars" class="rank-chart" aria-label="Distribucion por tipo de turismo"></div>
+          </article>
+
+          <article class="chart-card" id="priorizacion">
+            <div class="chart-title">
+              <h3>Priorizacion municipal</h3>
+              <span>indice de oportunidad</span>
+            </div>
+            <div id="opportunity-ranking" class="rank-chart" aria-label="Ranking por oportunidad"></div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="geoturismo-municipios.js"></script>
+  <script src="geoturismo-data.js"></script>
+  <script src="panel.js"></script>
+  <script src="asistente.js"></script>
+</body>
+</html>

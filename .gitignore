@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Variables de entorno (¡nunca subir API keys!)
+.env
+!.env.example
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# Outputs generados (CSV, PNG, HTML)
+outputs/graficas/*.png
+outputs/*.html
+outputs/*.csv
+outputs/adk_tool_calls.log
+
+# Mantener estructura de outputs
+!outputs/.gitkeep
+!outputs/graficas/.gitkeep
+
+# Archivos de datos fuente (Excel pesados)
+fuentes/*.xlsx
+fuentes/*.xls
+fuentes/*.csv
+
+# Datos frontend generados desde PostgreSQL/PostGIS
+frontend/geoturismo-municipios.js
+
+# IDE / editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales de tests
+test_chatbot.py
+test_gemini.py
+
+# pyproject build
+*.dist-info/
