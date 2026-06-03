@@ -145,6 +145,7 @@ def crear_esquema(conn):
         gasto_estimado      NUMERIC     DEFAULT 0,
         indice_seguridad    NUMERIC     DEFAULT 0,
         tiempo_acceso_min   NUMERIC     DEFAULT 0,
+        indice_oportunidad_turistica NUMERIC DEFAULT 0,
         geom                GEOMETRY(Point, 4326),
         creado_en           TIMESTAMPTZ DEFAULT now()
     );
@@ -181,8 +182,8 @@ def insertar_turismo_municipal(conn):
     insert_sql = """
     INSERT INTO public.turismo_municipal
         (municipio, anio, visitantes, atractivos, ocupacion_hotelera,
-         gasto_estimado, indice_seguridad, tiempo_acceso_min, geom)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %s,
+         gasto_estimado, indice_seguridad, tiempo_acceso_min, indice_oportunidad_turistica, geom)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s,
             ST_SetSRID(ST_MakePoint(%s, %s), 4326))
     ON CONFLICT DO NOTHING;
     """
@@ -190,22 +191,54 @@ def insertar_turismo_municipal(conn):
     for municipio, base in TURISMO_BASE.items():
         lat, lon = COORDS.get(municipio, (3.45, -76.53))
         for anio, factor in GROWTH.items():
-            rows.append((
-                municipio, anio,
-                round(base["visitantes"] * factor),
-                base["atractivos"],
-                round(base["ocupacion_hotelera"] * factor, 2),
-                round(base["gasto_estimado"] * factor),
-                round(base["indice_seguridad"] * (1 + (factor - 1) * 0.3), 4),
-                base["tiempo_acceso_min"],
-                lon, lat,
-            ))
+            rows.append({
+                "municipio": municipio,
+                "anio": anio,
+                "visitantes": round(base["visitantes"] * factor),
+                "atractivos": base["atractivos"],
+                "ocupacion_hotelera": round(base["ocupacion_hotelera"] * factor, 2),
+                "gasto_estimado": round(base["gasto_estimado"] * factor),
+                "indice_seguridad": round(base["indice_seguridad"] * (1 + (factor - 1) * 0.3), 4),
+                "tiempo_acceso_min": base["tiempo_acceso_min"],
+                "lon": lon,
+                "lat": lat,
+            })
+
+    # Calcular el índice de oportunidad turística
+    df = pd.DataFrame(rows)
+    def norm(col):
+        serie = df[col].astype(float)
+        rango = serie.max() - serie.min()
+        if rango == 0:
+            return serie * 0
+        return (serie - serie.min()) / rango
+
+    accesibilidad = 1 - norm("tiempo_acceso_min")
+    df["indice_oportunidad_turistica"] = (
+        norm("visitantes") * 0.25
+        + norm("atractivos") * 0.20
+        + norm("ocupacion_hotelera") * 0.15
+        + norm("gasto_estimado") * 0.15
+        + norm("indice_seguridad") * 0.15
+        + accesibilidad * 0.10
+    ).round(4)
+
+    insert_rows = []
+    for _, r in df.iterrows():
+        insert_rows.append((
+            r["municipio"], int(r["anio"]),
+            int(r["visitantes"]), int(r["atractivos"]),
+            float(r["ocupacion_hotelera"]), int(r["gasto_estimado"]),
+            float(r["indice_seguridad"]), int(r["tiempo_acceso_min"]),
+            float(r["indice_oportunidad_turistica"]),
+            float(r["lon"]), float(r["lat"])
+        ))
 
     cur = conn.cursor()
-    cur.executemany(insert_sql, rows)
+    cur.executemany(insert_sql, insert_rows)
     conn.commit()
     cur.close()
-    print(f"  [OK] {len(rows)} registros insertados en turismo_municipal.")
+    print(f"  [OK] {len(insert_rows)} registros insertados en turismo_municipal.")
 
 
 def insertar_atractivos(conn):

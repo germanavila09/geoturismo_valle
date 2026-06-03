@@ -10,7 +10,9 @@
 
 (() => {
   // ── Configuración ──────────────────────────────────────────────────────────
-  const API_BASE   = "http://localhost:8081";
+  const API_BASE   = window.location.protocol.startsWith("http")
+                     ? window.location.origin + "/api/geoturismo"
+                     : "http://localhost:8081";
   const SESSION_ID = "obs_" + Math.random().toString(36).slice(2, 10);
 
   const SUGERENCIAS = [

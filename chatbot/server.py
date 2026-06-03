@@ -34,16 +34,25 @@ from fastapi import FastAPI, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from google.adk.runners import Runner
-from google.adk.sessions import InMemorySessionService
-from google.adk.artifacts import InMemoryArtifactService
-from google.genai import types as genai_types
+try:
+    from google.adk.runners import Runner
+    from google.adk.sessions import InMemorySessionService
+    from google.adk.artifacts import InMemoryArtifactService
+    from google.genai import types as genai_types
+    ADK_AVAILABLE = True
+    ADK_IMPORT_ERROR: Exception | None = None
+except Exception as exc:
+    Runner = None
+    InMemorySessionService = None
+    InMemoryArtifactService = None
+    genai_types = None
+    ADK_AVAILABLE = False
+    ADK_IMPORT_ERROR = exc
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from geoturismo_agent.agent import root_agent
 from geoturismo_agent.ui_actions import coropletico_action, geovisor_action, navigate_action
 from geoturismo_agent.tools import (
     listar_municipios as _t_listar,
@@ -55,19 +64,30 @@ from geoturismo_agent.tools import (
     municipios_por_tipo_turismo as _t_tipo,
 )
 
+try:
+    from geoturismo_agent.agent import root_agent
+except Exception as exc:
+    root_agent = None
+    ADK_AVAILABLE = False
+    ADK_IMPORT_ERROR = exc
+
 APP_NAME = "observatorio_geoturismo"
 USER_ID  = "frontend_user"
 
-session_service  = InMemorySessionService()
-artifact_service = InMemoryArtifactService()
+session_service = InMemorySessionService() if ADK_AVAILABLE else None
+artifact_service = InMemoryArtifactService() if ADK_AVAILABLE else None
 fallback_artifacts: dict[tuple[str, str], bytes] = {}
 local_context: dict[str, dict] = {}
 
-runner = Runner(
-    agent=root_agent,
-    app_name=APP_NAME,
-    session_service=session_service,
-    artifact_service=artifact_service,
+runner = (
+    Runner(
+        agent=root_agent,
+        app_name=APP_NAME,
+        session_service=session_service,
+        artifact_service=artifact_service,
+    )
+    if ADK_AVAILABLE
+    else None
 )
 
 app = FastAPI(
@@ -101,6 +121,8 @@ class ChatResponse(BaseModel):
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
 async def _ensure_session(session_id: str) -> None:
+    if session_service is None:
+        return
     existing = await session_service.get_session(
         app_name=APP_NAME, user_id=USER_ID, session_id=session_id
     )
@@ -439,15 +461,36 @@ def _local_response(req: ChatRequest) -> ChatResponse | None:
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "agent": root_agent.name, "app": APP_NAME}
+    payload = {
+        "status": "ok",
+        "mode": "adk" if ADK_AVAILABLE else "local",
+        "agent": getattr(root_agent, "name", "local_fallback"),
+        "app": APP_NAME,
+    }
+    if not ADK_AVAILABLE:
+        payload["detail"] = f"ADK no disponible: {ADK_IMPORT_ERROR}"
+    return payload
 
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
-    # UI actions (mapas, geovisor, navegación) se resuelven siempre en local
-    ui_resp = _local_observatory_action_response(req)
-    if ui_resp is not None:
-        return ui_resp
+    # UI y consultas estructuradas se resuelven primero en local para que el
+    # asistente funcione aun sin Gemini/ADK o sin cuota disponible.
+    local_resp = _local_response(req)
+    if local_resp is not None:
+        return local_resp
+
+    if not ADK_AVAILABLE or runner is None or session_service is None:
+        return ChatResponse(
+            reply=(
+                "Estoy funcionando en modo local. Puedo responder consultas sobre "
+                "municipios, visitantes, atractivos, tipos de turismo, rankings, "
+                "series temporales y mapas. Prueba: 'top 5 municipios en 2025', "
+                "'municipios con ecoturismo' o 'atractivos de Buga'."
+            ),
+            artifacts=[],
+            session_id=req.session_id,
+        )
 
     await _ensure_session(req.session_id)
 
@@ -518,6 +561,9 @@ async def get_artifact(filename: str, session_id: str):
         return Response(content=fallback, media_type="image/png",
                         headers={"Cache-Control": "private, max-age=3600"})
 
+    if artifact_service is None:
+        raise HTTPException(status_code=404, detail="Artifacts no disponibles en modo local.")
+
     artifact = await artifact_service.load_artifact(
         app_name=APP_NAME, user_id=USER_ID,
         session_id=session_id, filename=filename,
@@ -534,6 +580,7 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("CHATBOT_PORT", "8081"))
     print(f"\n  GeoTurismo Chatbot API  ->  http://localhost:{port}")
-    print(f"   Agente : {root_agent.name}")
+    print(f"   Modo   : {'ADK/Gemini' if ADK_AVAILABLE else 'local'}")
+    print(f"   Agente : {getattr(root_agent, 'name', 'local_fallback')}")
     print(f"   Docs   : http://localhost:{port}/docs\n")
     uvicorn.run("server:app", host="0.0.0.0", port=port, reload=True)

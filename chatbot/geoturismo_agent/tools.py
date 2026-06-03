@@ -23,7 +23,10 @@ if str(_PROJECT_ROOT) not in sys.path:
 import pandas as pd
 from sqlalchemy import text
 
-from google.adk.tools import ToolContext
+try:
+    from google.adk.tools import ToolContext
+except Exception:
+    ToolContext = Any
 
 from src.db import crear_engine
 

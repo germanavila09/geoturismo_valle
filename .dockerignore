@@ -1,0 +1,40 @@
+# Control de versiones y cachés
+.git
+.gitignore
+.gitattributes
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Entornos virtuales locales
+.venv
+venv
+env
+
+# Archivos de entorno (se inyectan vía docker-compose)
+.env
+.env.*
+!.env.example
+
+# Outputs grandes y artefactos generados (se montan como volumen)
+outputs/
+*.log
+*.png
+*.html
+
+# IDE / editores
+.vscode
+.idea
+*.swp
+.DS_Store
+
+# Documentación y archivos pesados que no se necesitan en la imagen
+docs/
+tests/
+*.backup
+*.dump

@@ -45,8 +45,24 @@ def _err(message: str) -> dict:
     return {"status": "error", "error_message": message}
 
 
+# Alias de nombres populares → nombre exacto en turismo_municipal
+_ALIAS_MUNICIPIO: dict[str, str] = {
+    "CALI":        "SANTIAGO DE CALI",
+    "BUGA":        "GUADALAJARA DE BUGA",
+    "CALIMA":      "CALIMA - EL DARIÉN",
+    "EL DARIEN":   "CALIMA - EL DARIÉN",
+    "DARIEN":      "CALIMA - EL DARIÉN",
+    "JAMUNDI":     "JAMUNDÍ",
+    "GUACARI":     "GUACARÍ",
+    "TULUA":       "TULUÁ",
+    "ALCALA":      "ALCALÁ",
+    "RIOFRIO":     "RIOFRÍO",
+}
+
+
 def _norm(nombre: str) -> str:
-    return nombre.strip().upper()
+    upper = nombre.strip().upper()
+    return _ALIAS_MUNICIPIO.get(upper, upper)
 
 
 def _norm_list(municipios: list[str] | str) -> list[str]:
