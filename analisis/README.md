@@ -34,3 +34,26 @@ Los scripts escriben sus salidas (json, csv, png) en la carpeta desde donde se e
 
 Reemplazar los valores escritos a mano en `scripts/seed_db.py` por indicadores calculados desde el RNT
 (`impacto_sismo/cadena_valor_rnt/turismo_mun*.py`), para que el dashboard y el chatbot usen datos reales de los 42 municipios.
+
+## Convención obligatoria: todo informe lleva mapas y gráficos, no solo tablas
+
+Desde 2026-10-21, cualquier informe nuevo en `../informes/` (para una secretaría, un proyecto como PAER,
+o cualquier entrega externa) debe incluir **al menos un mapa coroplético de los municipios cubiertos y
+los gráficos de apoyo**, no solo tablas. Las tablas sirven para el detalle exacto; el mapa y los gráficos
+son los que de verdad se leen en una reunión.
+
+**Referencia de estilo** (abre estos dos para ver el estándar ya validado):
+- `../informes/Informe_impacto_economico_2026-09-01_GAR.docx` — 12 figuras: mapas coropléticos de los 42
+  municipios (geopandas, límites del Marco Geoestadístico Nacional del DANE, nombre + valor por municipio,
+  barra de color) y paneles de barras horizontales 2×2 con etiquetas directas (% y conteo) y la base
+  muestral declarada en el título de cada panel.
+- `../informes/Linea_base_agroturismo_ICETEX_2026-10-19.docx` — mismo patrón, 3 figuras.
+
+**Scripts reutilizables que ya generan este estilo** (no reinventar el estilo a mano):
+- Mapas: `impacto_sismo/cadena_valor_rnt/mapas_turismo.py`, `impacto_sismo/impacto_economico/mapas.py`,
+  `impacto_sismo/impacto_economico/analisis/mapas.py`.
+- Paneles de barras: `impacto_sismo/cadena_valor_rnt/grafico_perdidas.py`,
+  `impacto_sismo/cadena_valor_rnt/grafico_empleo.py`, `impacto_sismo/impacto_economico/figuras2.py`,
+  `impacto_sismo/impacto_economico/graficos2.py`, `impacto_sismo/cadena_valor_rnt/figuras_perfil.py`.
+- Antes de escribir un script de figuras nuevo, revisa si alguno de estos ya cubre el municipio/métrica
+  que necesitas — casi siempre se puede adaptar en vez de crear uno desde cero.
