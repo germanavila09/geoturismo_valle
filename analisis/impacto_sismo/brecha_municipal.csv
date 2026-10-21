@@ -1,0 +1,42 @@
+municipio,zona,icm,icm_semaforo,semaforo_vuln,IAE_aj,n,poblacion_afectada,viv_destruidas,fallecidos,heridos,entregas,toneladas,kg_por_afectado,r_icm,r_iae,r_nec,r_ayuda,brecha,cuadrante,disc,pct_no_opera,pct_perd_alta,emprendimientos
+Trujillo,Centro,86.4,Crítico,Alta,97.7,48,5904,1157,3,36,14,19,3.2,1.0,2.0,1.0,4.5,3.5,"2 · Necesidad alta, ayuda alta",-1.0,50.0,22.9,30.0
+Roldanillo,Norte,75.52,Crítico,Media-alta,100.0,698,5999,2535,2,14,12,17,2.8,4.0,1.0,2.0,12.5,10.5,"2 · Necesidad alta, ayuda alta",3.0,44.0,25.2,247.0
+El Cairo,Norte,77.83,Crítico,Alta,93.6,70,2683,70,3,4,5,7,2.6,3.0,4.0,3.0,31.0,28.0,"1 · Necesidad alta, ayuda baja",-1.0,37.7,18.2,13.0
+Sevilla,Norte,66.4,Crítico,Media-alta,92.4,592,8260,623,3,58,21,29,3.5,7.0,6.0,4.0,2.0,-2.0,"2 · Necesidad alta, ayuda alta",1.0,38.8,14.7,142.0
+Toro,Norte,82.05,Crítico,Alta,69.9,88,4603,700,2,31,6,8,1.7,2.0,14.5,5.0,26.5,21.5,"1 · Necesidad alta, ayuda baja",-12.5,33.9,15.9,42.0
+Versalles,Norte,62.45,Crítico,Media-baja,83.9,137,2797,145,0,18,12,17,6.1,10.0,8.0,7.0,12.5,5.5,"2 · Necesidad alta, ayuda alta",2.0,24.3,27.8,50.0
+La Unión,Norte,65.9,Crítico,Media-alta,80.6,368,6065,478,1,28,11,15,2.5,8.0,10.0,7.0,15.5,8.5,"2 · Necesidad alta, ayuda alta",-2.0,37.4,23.7,261.0
+Argelia,Norte,58.4,Alto,Alta,93.4,166,3433,977,0,3,13,18,5.2,13.0,5.0,7.0,8.0,1.0,"2 · Necesidad alta, ayuda alta",8.0,61.4,24.2,108.0
+Dagua,Pacífico,59.17,Crítico,Media-baja,82.3,114,7596,217,6,58,22,30,3.9,11.0,9.0,9.5,1.0,-8.5,"2 · Necesidad alta, ayuda alta",2.0,27.3,31.5,29.0
+La Cumbre,Sur,53.27,Alto,Alta,96.0,62,2935,163,0,7,13,18,6.1,17.0,3.0,9.5,8.0,-1.5,"2 · Necesidad alta, ayuda alta",14.0,27.5,20.3,13.0
+El Águila,Norte,72.7,Crítico,Media-alta,63.8,53,2619,419,1,25,11,15,5.7,5.0,19.0,11.5,15.5,4.0,"2 · Necesidad alta, ayuda alta",-14.0,42.6,7.1,10.0
+Bolívar,Norte,59.05,Alto,Alta,75.0,41,3898,120,0,9,13,18,4.6,12.0,12.0,11.5,8.0,-3.5,"2 · Necesidad alta, ayuda alta",0.0,50.0,5.0,24.0
+Yotoco,Centro,69.22,Crítico,Media-alta,49.9,91,5395,808,0,14,16,22,4.1,6.0,24.0,13.0,3.0,-10.0,"2 · Necesidad alta, ayuda alta",-18.0,30.2,17.9,47.0
+Restrepo,Centro,55.9,Alto,Media-alta,51.9,194,4723,679,0,60,14,19,4.0,14.0,22.0,14.5,4.5,-10.0,"2 · Necesidad alta, ayuda alta",-8.0,26.7,20.7,78.0
+Yumbo,Sur,31.1,Medio,Baja,87.3,196,1135,54,8,28,5,7,6.2,29.0,7.0,14.5,31.0,16.5,"1 · Necesidad alta, ayuda baja",22.0,20.7,38.3,28.0
+Alcalá,Norte,53.38,Alto,Alta,55.8,180,2800,120,0,20,7,10,3.6,16.0,21.0,17.0,22.0,5.0,"2 · Necesidad alta, ayuda alta",-5.0,31.1,23.8,75.0
+Tuluá,Centro,39.8,Alto,Media-baja,68.5,175,1484,27,3,67,4,6,4.0,21.0,16.0,17.0,35.0,18.0,"1 · Necesidad alta, ayuda baja",5.0,31.5,17.5,79.0
+Buenaventura,Pacífico,52.8,Alto,Media-alta,66.2,1252,31518,954,27,476,13,18,0.6,19.0,18.0,17.0,8.0,-9.0,"2 · Necesidad alta, ayuda alta",1.0,20.7,17.7,180.0
+Caicedonia,Norte,33.08,Medio,Baja,76.2,274,4616,183,0,8,8,11,2.4,27.0,11.0,19.0,18.5,-0.5,"2 · Necesidad alta, ayuda alta",16.0,37.6,14.3,114.0
+Riofrío,Centro,34.0,Medio,Baja,74.5,83,3809,480,1,3,12,17,4.5,26.0,13.0,20.0,12.5,-7.5,"2 · Necesidad alta, ayuda alta",13.0,34.9,25.3,
+Calima,Centro,34.55,Medio,Baja,68.1,187,3352,676,6,74,13,18,5.4,25.0,17.0,21.0,8.0,-13.0,"2 · Necesidad alta, ayuda alta",8.0,31.1,26.1,58.0
+Ulloa,Norte,55.55,Alto,Alta,40.9,82,1256,69,0,2,5,7,5.6,15.0,28.0,22.5,31.0,8.5,"4 · Necesidad baja, ayuda baja",-13.0,24.5,6.2,30.0
+Zarzal,Norte,52.97,Alto,Media-baja,45.2,297,4326,143,2,75,7,10,2.3,18.0,25.0,22.5,22.0,-0.5,"3 · Necesidad baja, ayuda alta",-7.0,34.4,12.5,235.0
+El Dovio,Norte,63.53,Crítico,Alta,18.1,142,2978,395,0,3,4,6,2.0,9.0,35.0,24.0,35.0,11.0,"4 · Necesidad baja, ayuda baja",-26.0,23.7,5.4,117.0
+Ansermanuevo,Norte,48.45,Alto,Alta,44.4,119,4310,196,0,0,10,14,3.2,20.0,26.0,25.0,17.0,-8.0,"3 · Necesidad baja, ayuda alta",-6.0,22.0,17.0,23.0
+San Pedro,Centro,22.45,Bajo,Media-baja,69.9,36,1659,4,0,0,4,6,3.6,34.0,14.5,26.0,35.0,9.0,"4 · Necesidad baja, ayuda baja",19.5,28.6,20.0,17.0
+Florida,Sur,35.9,Medio,Media-alta,32.2,24,474,4,1,2,0,0,0.0,23.0,32.0,27.0,40.5,13.5,"4 · Necesidad baja, ayuda baja",-9.0,30.0,8.7,18.0
+Jamundí,Sur,18.53,Bajo,Baja,57.8,207,4111,17,0,47,5,7,1.7,36.0,20.0,28.0,31.0,3.0,"4 · Necesidad baja, ayuda baja",16.0,30.1,15.5,54.0
+Guacarí,Centro,27.17,Medio,Media-alta,40.3,26,314,31,0,4,3,4,12.7,31.0,29.0,29.5,37.0,7.5,"4 · Necesidad baja, ayuda baja",2.0,22.2,0.0,9.0
+Obando,Norte,34.83,Medio,Media-baja,11.8,41,1844,24,0,1,7,10,5.4,24.0,36.0,29.5,22.0,-7.5,"3 · Necesidad baja, ayuda alta",-12.0,9.1,8.6,22.0
+El Cerrito,Centro,11.38,Bajo,Baja,50.5,23,291,3,0,7,5,7,24.1,38.0,23.0,31.5,31.0,-0.5,"4 · Necesidad baja, ayuda baja",15.0,10.0,19.0,4.0
+Vijes,Centro,28.92,Medio,Media-alta,33.4,48,871,31,0,12,6,8,9.2,30.0,31.0,31.5,26.5,-5.0,"4 · Necesidad baja, ayuda baja",-1.0,36.8,10.6,32.0
+Andalucía,Centro,25.0,Bajo,Media-alta,35.1,68,2216,77,0,0,6,8,3.6,32.0,30.0,33.0,26.5,-6.5,"4 · Necesidad baja, ayuda baja",2.0,20.7,8.8,48.0
+La Victoria,Norte,39.4,Medio,Alta,0.0,70,1967,12,0,6,8,11,5.6,22.0,41.0,34.0,18.5,-15.5,"3 · Necesidad baja, ayuda alta",-19.0,11.5,12.5,30.0
+Pradera,Sur,16.55,Bajo,Media-baja,42.4,25,448,4,0,1,2,3,6.7,37.0,27.0,35.0,38.5,3.5,"4 · Necesidad baja, ayuda baja",10.0,22.2,5.9,10.0
+Bugalagrande,Centro,32.8,Medio,Media-baja,10.9,154,2921,125,0,30,7,10,3.4,28.0,38.0,36.0,22.0,-14.0,"3 · Necesidad baja, ayuda alta",-10.0,24.5,6.7,81.0
+Ginebra,Centro,22.0,Bajo,Media-alta,29.9,22,352,37,0,2,2,3,8.5,35.0,33.0,37.0,38.5,1.5,"4 · Necesidad baja, ayuda baja",2.0,18.8,5.6,2.0
+Cartago,Norte,22.55,Bajo,Baja,11.7,736,970,40,0,30,12,17,17.5,33.0,37.0,38.0,12.5,-25.5,"3 · Necesidad baja, ayuda alta",-4.0,16.8,16.3,83.0
+Candelaria,Sur,10.55,Bajo,Baja,25.1,29,404,27,0,30,0,0,0.0,39.0,34.0,39.0,40.5,1.5,"4 · Necesidad baja, ayuda baja",5.0,21.7,8.3,4.0
+Palmira,Sur,5.85,Bajo,Baja,7.4,405,506,2,0,0,7,10,19.8,40.0,39.0,40.0,22.0,-18.0,"3 · Necesidad baja, ayuda alta",1.0,24.7,5.0,306.0
+Buga,Centro,4.7,Bajo,Baja,6.3,57,1074,42,1,38,6,8,7.4,41.0,40.0,41.0,26.5,-14.5,"4 · Necesidad baja, ayuda baja",1.0,8.3,7.0,12.0

@@ -1,0 +1,384 @@
+{
+ "n0": 14372,
+ "n_unicos": 13652,
+ "extras": 720,
+ "pct": 5.0,
+ "senales": {
+  "teléfono": {
+   "grupos_duplicados": 385,
+   "registros_extra": 390,
+   "grupos_descartados": 140
+  },
+  "correo": {
+   "grupos_duplicados": 266,
+   "registros_extra": 272,
+   "grupos_descartados": 80
+  },
+  "NIT": {
+   "grupos_duplicados": 29,
+   "registros_extra": 30,
+   "grupos_descartados": 8
+  },
+  "documento": {
+   "grupos_duplicados": 26,
+   "registros_extra": 28,
+   "grupos_descartados": 6
+  }
+ },
+ "gestores": 234,
+ "gestor_max": 35,
+ "gestor_detalle": [
+  {
+   "senal": "correo",
+   "reportes": 35,
+   "municipios": 13,
+   "razones_sociales": 35,
+   "documentos": 23
+  },
+  {
+   "senal": "correo",
+   "reportes": 15,
+   "municipios": 7,
+   "razones_sociales": 14,
+   "documentos": 8
+  },
+  {
+   "senal": "correo",
+   "reportes": 12,
+   "municipios": 5,
+   "razones_sociales": 12,
+   "documentos": 6
+  },
+  {
+   "senal": "teléfono",
+   "reportes": 7,
+   "municipios": 4,
+   "razones_sociales": 7,
+   "documentos": 3
+  },
+  {
+   "senal": "correo",
+   "reportes": 7,
+   "municipios": 3,
+   "razones_sociales": 7,
+   "documentos": 6
+  }
+ ],
+ "tam_grupos": {
+  "2": 634,
+  "3": 40,
+  "4": 2
+ },
+ "max_grupo": 4,
+ "n_grupos_dup": 676,
+ "antes": {
+  "n": 14372,
+  "pct_severo": 54.36,
+  "pct_no_opera": 28.5,
+  "pct_no_normal": 70.76,
+  "pct_perd_alta": 20.68
+ },
+ "despues": {
+  "n": 13652,
+  "pct_severo": 55.57,
+  "pct_no_opera": 29.16,
+  "pct_no_normal": 71.7,
+  "pct_perd_alta": 21.13
+ },
+ "por_municipio": [
+  {
+   "municipio": "GUADALAJARA DE BUGA",
+   "reportes": 66,
+   "unicos": 57,
+   "dup": 9,
+   "pct": 13.6
+  },
+  {
+   "municipio": "FLORIDA",
+   "reportes": 27,
+   "unicos": 24,
+   "dup": 3,
+   "pct": 11.1
+  },
+  {
+   "municipio": "LA CUMBRE",
+   "reportes": 69,
+   "unicos": 62,
+   "dup": 7,
+   "pct": 10.1
+  },
+  {
+   "municipio": "LA VICTORIA",
+   "reportes": 77,
+   "unicos": 70,
+   "dup": 7,
+   "pct": 9.1
+  },
+  {
+   "municipio": "BOLIVAR",
+   "reportes": 45,
+   "unicos": 41,
+   "dup": 4,
+   "pct": 8.9
+  },
+  {
+   "municipio": "RESTREPO",
+   "reportes": 212,
+   "unicos": 194,
+   "dup": 18,
+   "pct": 8.5
+  },
+  {
+   "municipio": "ANSERMANUEVO",
+   "reportes": 129,
+   "unicos": 119,
+   "dup": 10,
+   "pct": 7.8
+  },
+  {
+   "municipio": "CARTAGO",
+   "reportes": 794,
+   "unicos": 736,
+   "dup": 58,
+   "pct": 7.3
+  },
+  {
+   "municipio": "GUACARI",
+   "reportes": 28,
+   "unicos": 26,
+   "dup": 2,
+   "pct": 7.1
+  },
+  {
+   "municipio": "YOTOCO",
+   "reportes": 98,
+   "unicos": 91,
+   "dup": 7,
+   "pct": 7.1
+  },
+  {
+   "municipio": "RIOFRIO",
+   "reportes": 89,
+   "unicos": 83,
+   "dup": 6,
+   "pct": 6.7
+  },
+  {
+   "municipio": "DAGUA",
+   "reportes": 122,
+   "unicos": 114,
+   "dup": 8,
+   "pct": 6.6
+  },
+  {
+   "municipio": "CANDELARIA",
+   "reportes": 31,
+   "unicos": 29,
+   "dup": 2,
+   "pct": 6.5
+  },
+  {
+   "municipio": "EL DOVIO",
+   "reportes": 151,
+   "unicos": 142,
+   "dup": 9,
+   "pct": 6.0
+  },
+  {
+   "municipio": "SEVILLA",
+   "reportes": 629,
+   "unicos": 592,
+   "dup": 37,
+   "pct": 5.9
+  },
+  {
+   "municipio": "VIJES",
+   "reportes": 51,
+   "unicos": 48,
+   "dup": 3,
+   "pct": 5.9
+  },
+  {
+   "municipio": "ALCALA",
+   "reportes": 191,
+   "unicos": 180,
+   "dup": 11,
+   "pct": 5.8
+  },
+  {
+   "municipio": "ARGELIA",
+   "reportes": 176,
+   "unicos": 166,
+   "dup": 10,
+   "pct": 5.7
+  },
+  {
+   "municipio": "PALMIRA",
+   "reportes": 429,
+   "unicos": 405,
+   "dup": 24,
+   "pct": 5.6
+  },
+  {
+   "municipio": "TORO",
+   "reportes": 93,
+   "unicos": 88,
+   "dup": 5,
+   "pct": 5.4
+  },
+  {
+   "municipio": "BUENAVENTURA",
+   "reportes": 1322,
+   "unicos": 1252,
+   "dup": 70,
+   "pct": 5.3
+  },
+  {
+   "municipio": "VERSALLES",
+   "reportes": 144,
+   "unicos": 137,
+   "dup": 7,
+   "pct": 4.9
+  },
+  {
+   "municipio": "CALI",
+   "reportes": 6271,
+   "unicos": 5972,
+   "dup": 299,
+   "pct": 4.8
+  },
+  {
+   "municipio": "ZARZAL",
+   "reportes": 312,
+   "unicos": 297,
+   "dup": 15,
+   "pct": 4.8
+  },
+  {
+   "municipio": "CAICEDONIA",
+   "reportes": 286,
+   "unicos": 274,
+   "dup": 12,
+   "pct": 4.2
+  },
+  {
+   "municipio": "EL CERRITO",
+   "reportes": 24,
+   "unicos": 23,
+   "dup": 1,
+   "pct": 4.2
+  },
+  {
+   "municipio": "EL CAIRO",
+   "reportes": 73,
+   "unicos": 70,
+   "dup": 3,
+   "pct": 4.1
+  },
+  {
+   "municipio": "ROLDANILLO",
+   "reportes": 728,
+   "unicos": 698,
+   "dup": 30,
+   "pct": 4.1
+  },
+  {
+   "municipio": "CALIMA",
+   "reportes": 194,
+   "unicos": 187,
+   "dup": 7,
+   "pct": 3.6
+  },
+  {
+   "municipio": "EL AGUILA",
+   "reportes": 55,
+   "unicos": 53,
+   "dup": 2,
+   "pct": 3.6
+  },
+  {
+   "municipio": "JAMUNDI",
+   "reportes": 214,
+   "unicos": 207,
+   "dup": 7,
+   "pct": 3.3
+  },
+  {
+   "municipio": "YUMBO",
+   "reportes": 202,
+   "unicos": 196,
+   "dup": 6,
+   "pct": 3.0
+  },
+  {
+   "municipio": "ANDALUCIA",
+   "reportes": 70,
+   "unicos": 68,
+   "dup": 2,
+   "pct": 2.9
+  },
+  {
+   "municipio": "LA UNION",
+   "reportes": 379,
+   "unicos": 368,
+   "dup": 11,
+   "pct": 2.9
+  },
+  {
+   "municipio": "SAN PEDRO",
+   "reportes": 37,
+   "unicos": 36,
+   "dup": 1,
+   "pct": 2.7
+  },
+  {
+   "municipio": "BUGALAGRANDE",
+   "reportes": 158,
+   "unicos": 154,
+   "dup": 4,
+   "pct": 2.5
+  },
+  {
+   "municipio": "OBANDO",
+   "reportes": 42,
+   "unicos": 41,
+   "dup": 1,
+   "pct": 2.4
+  },
+  {
+   "municipio": "TRUJILLO",
+   "reportes": 49,
+   "unicos": 48,
+   "dup": 1,
+   "pct": 2.0
+  },
+  {
+   "municipio": "TULUA",
+   "reportes": 176,
+   "unicos": 175,
+   "dup": 1,
+   "pct": 0.6
+  },
+  {
+   "municipio": "GINEBRA",
+   "reportes": 22,
+   "unicos": 22,
+   "dup": 0,
+   "pct": 0.0
+  },
+  {
+   "municipio": "PRADERA",
+   "reportes": 25,
+   "unicos": 25,
+   "dup": 0,
+   "pct": 0.0
+  },
+  {
+   "municipio": "ULLOA",
+   "reportes": 82,
+   "unicos": 82,
+   "dup": 0,
+   "pct": 0.0
+  }
+ ]
+}

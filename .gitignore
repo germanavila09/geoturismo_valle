@@ -65,3 +65,10 @@ test_gemini.py
 
 # pyproject build
 *.dist-info/
+
+# Versiones anteriores de informes (fusión con observatorios/turismo, 2026-10-19)
+archivo/
+# Fuentes de los análisis de turismo (Excel pesados)
+fuentes/**/*.xlsx
+# Intermedios de los análisis
+analisis/**/*.pkl

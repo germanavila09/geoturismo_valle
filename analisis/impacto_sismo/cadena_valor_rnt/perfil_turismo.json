@@ -1,0 +1,1644 @@
+{
+ "corte": "2026-09-03",
+ "fuente_marco": "Secretaría de Desarrollo Económico, Competitividad y Fomento del Empleo · Consejo de Gobierno, 15 de septiembre de 2026",
+ "censo": {
+  "recibidos": 15645,
+  "dobles": 772,
+  "unicos": 14873
+ },
+ "turismo": {
+  "n": 1839,
+  "critica": 527,
+  "grave": 627,
+  "moderada": 359,
+  "baja": 100,
+  "no_afectado": 19,
+  "sin_clasif": 207,
+  "sev": 1154,
+  "pct_sev": 62.8,
+  "base_clasif": 1632,
+  "pct_sev_clasif": 70.7,
+  "base_cont": 1557,
+  "normal": 381,
+  "parcial": 624,
+  "no_opera": 552,
+  "pct_normal": 24.5,
+  "pct_parcial": 40.1,
+  "pct_no_opera": 35.5,
+  "pct_restriccion": 75.5,
+  "base_perd": 1551,
+  "perd_min": 18470,
+  "perd_ab": 89,
+  "pct_perd_alta": 26.3,
+  "base_empl": 1434,
+  "con_empleo": 1161,
+  "pct_empleo": 81.0,
+  "base_reg": 1736,
+  "registrada": 1680,
+  "pct_registrada": 96.8,
+  "base_dano": 1686,
+  "dano": {
+   "Infraestructura, maquinaria o equipos": 1230,
+   "Inventarios o mercancías": 650,
+   "Reducción de clientes, pedidos o ventas": 767,
+   "Proveedores, logística o servicios públicos": 296,
+   "Restricción de acceso al establecimiento": 22
+  },
+  "base_nec": 1718,
+  "nec": {
+   "Capital de trabajo, inventarios o insumos": 754,
+   "Reparar instalaciones, maquinaria o equipos": 853,
+   "Recuperar clientes y ventas": 412,
+   "Restablecer servicios o logística": 113,
+   "Facilitar trámites": 131
+  },
+  "base_apo": 955,
+  "apo": {
+   "Alivio de obligaciones actuales": 342,
+   "Capital semilla o no reembolsable": 574,
+   "Nuevo crédito": 154,
+   "No requiere apoyo": 28
+  },
+  "tam": {
+   "Microempresa": 1522,
+   "Pequeña": 121,
+   "Mediana": 39,
+   "Grande": 26
+  }
+ },
+ "todos": {
+  "n": 14873,
+  "critica": 3354,
+  "grave": 4921,
+  "moderada": 3399,
+  "baja": 1402,
+  "no_afectado": 152,
+  "sin_clasif": 1645,
+  "sev": 8275,
+  "pct_sev": 55.6,
+  "base_clasif": 13228,
+  "pct_sev_clasif": 62.6,
+  "base_cont": 11877,
+  "normal": 3413,
+  "parcial": 5035,
+  "no_opera": 3429,
+  "pct_normal": 28.7,
+  "pct_parcial": 42.4,
+  "pct_no_opera": 28.9,
+  "pct_restriccion": 71.3,
+  "base_perd": 13109,
+  "perd_min": 132560,
+  "perd_ab": 635,
+  "pct_perd_alta": 21.3,
+  "base_empl": 11372,
+  "con_empleo": 8461,
+  "pct_empleo": 74.4,
+  "base_reg": 11381,
+  "registrada": 10377,
+  "pct_registrada": 91.2,
+  "base_dano": 13693,
+  "dano": {
+   "Infraestructura, maquinaria o equipos": 9335,
+   "Inventarios o mercancías": 4855,
+   "Proveedores, logística o servicios públicos": 2056,
+   "Reducción de clientes, pedidos o ventas": 5888,
+   "Restricción de acceso al establecimiento": 73
+  },
+  "base_nec": 13972,
+  "nec": {
+   "Reparar instalaciones, maquinaria o equipos": 6070,
+   "Capital de trabajo, inventarios o insumos": 6103,
+   "Facilitar trámites": 953,
+   "Recuperar clientes y ventas": 3205,
+   "Restablecer servicios o logística": 559
+  },
+  "base_apo": 8030,
+  "apo": {
+   "Capital semilla o no reembolsable": 4891,
+   "Alivio de obligaciones actuales": 2490,
+   "Nuevo crédito": 1189,
+   "No requiere apoyo": 377
+  },
+  "tam": {
+   "Microempresa": 12938,
+   "Pequeña": 738,
+   "Mediana": 188,
+   "Grande": 130
+  }
+ },
+ "rnt_vigentes": 7709,
+ "tipos": [
+  {
+   "n": 979,
+   "critica": 277,
+   "grave": 342,
+   "moderada": 182,
+   "baja": 45,
+   "no_afectado": 14,
+   "sin_clasif": 119,
+   "sev": 619,
+   "pct_sev": 63.2,
+   "base_clasif": 860,
+   "pct_sev_clasif": 72.0,
+   "base_cont": 851,
+   "normal": 201,
+   "parcial": 347,
+   "no_opera": 303,
+   "pct_normal": 23.6,
+   "pct_parcial": 40.8,
+   "pct_no_opera": 35.6,
+   "pct_restriccion": 76.4,
+   "base_perd": 799,
+   "perd_min": 9460,
+   "perd_ab": 47,
+   "pct_perd_alta": 25.7,
+   "base_empl": 768,
+   "con_empleo": 621,
+   "pct_empleo": 80.9,
+   "base_reg": 948,
+   "registrada": 924,
+   "pct_registrada": 97.5,
+   "base_dano": 896,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 642,
+    "Inventarios o mercancías": 338,
+    "Reducción de clientes, pedidos o ventas": 404,
+    "Proveedores, logística o servicios públicos": 166,
+    "Restricción de acceso al establecimiento": 7
+   },
+   "base_nec": 906,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 401,
+    "Reparar instalaciones, maquinaria o equipos": 421,
+    "Recuperar clientes y ventas": 180,
+    "Restablecer servicios o logística": 48,
+    "Facilitar trámites": 77
+   },
+   "base_apo": 472,
+   "apo": {
+    "Alivio de obligaciones actuales": 167,
+    "Nuevo crédito": 77,
+    "Capital semilla o no reembolsable": 274,
+    "No requiere apoyo": 15
+   },
+   "tam": {
+    "Microempresa": 785,
+    "Pequeña": 67,
+    "Mediana": 28,
+    "Grande": 20
+   },
+   "tipo": "Sin clasificar",
+   "pct_universo": 53.2,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 438
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 109
+    },
+    {
+     "municipio": "Sevilla",
+     "n": 53
+    },
+    {
+     "municipio": "Cartago",
+     "n": 45
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 43
+    }
+   ]
+  },
+  {
+   "n": 303,
+   "critica": 85,
+   "grave": 104,
+   "moderada": 64,
+   "baja": 25,
+   "no_afectado": 2,
+   "sin_clasif": 23,
+   "sev": 189,
+   "pct_sev": 62.4,
+   "base_clasif": 280,
+   "pct_sev_clasif": 67.5,
+   "base_cont": 243,
+   "normal": 59,
+   "parcial": 90,
+   "no_opera": 94,
+   "pct_normal": 24.3,
+   "pct_parcial": 37.0,
+   "pct_no_opera": 38.7,
+   "pct_restriccion": 75.7,
+   "base_perd": 266,
+   "perd_min": 2740,
+   "perd_ab": 12,
+   "pct_perd_alta": 22.9,
+   "base_empl": 221,
+   "con_empleo": 182,
+   "pct_empleo": 82.4,
+   "base_reg": 270,
+   "registrada": 245,
+   "pct_registrada": 90.7,
+   "base_dano": 285,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 226,
+    "Inventarios o mercancías": 131,
+    "Reducción de clientes, pedidos o ventas": 120,
+    "Restricción de acceso al establecimiento": 8,
+    "Proveedores, logística o servicios públicos": 53
+   },
+   "base_nec": 284,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 162,
+    "Capital de trabajo, inventarios o insumos": 132,
+    "Recuperar clientes y ventas": 75,
+    "Facilitar trámites": 16,
+    "Restablecer servicios o logística": 24
+   },
+   "base_apo": 145,
+   "apo": {
+    "Capital semilla o no reembolsable": 108,
+    "Alivio de obligaciones actuales": 43,
+    "Nuevo crédito": 21,
+    "No requiere apoyo": 5
+   },
+   "tam": {
+    "Microempresa": 261,
+    "Pequeña": 18,
+    "Mediana": 7,
+    "Grande": 2
+   },
+   "tipo": "Restaurantes y comidas",
+   "pct_universo": 16.5,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 82
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 36
+    },
+    {
+     "municipio": "Cartago",
+     "n": 22
+    },
+    {
+     "municipio": "Calima",
+     "n": 17
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 13
+    }
+   ],
+   "pct_tipificables": 43.5
+  },
+  {
+   "n": 163,
+   "critica": 49,
+   "grave": 50,
+   "moderada": 33,
+   "baja": 4,
+   "no_afectado": 0,
+   "sin_clasif": 27,
+   "sev": 99,
+   "pct_sev": 60.7,
+   "base_clasif": 136,
+   "pct_sev_clasif": 72.8,
+   "base_cont": 142,
+   "normal": 36,
+   "parcial": 57,
+   "no_opera": 49,
+   "pct_normal": 25.4,
+   "pct_parcial": 40.1,
+   "pct_no_opera": 34.5,
+   "pct_restriccion": 74.6,
+   "base_perd": 135,
+   "perd_min": 1275,
+   "perd_ab": 5,
+   "pct_perd_alta": 20.0,
+   "base_empl": 135,
+   "con_empleo": 105,
+   "pct_empleo": 77.8,
+   "base_reg": 157,
+   "registrada": 157,
+   "pct_registrada": 100.0,
+   "base_dano": 144,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 77,
+    "Reducción de clientes, pedidos o ventas": 83,
+    "Inventarios o mercancías": 44,
+    "Proveedores, logística o servicios públicos": 24,
+    "Restricción de acceso al establecimiento": 2
+   },
+   "base_nec": 150,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 68,
+    "Reparar instalaciones, maquinaria o equipos": 46,
+    "Recuperar clientes y ventas": 21,
+    "Restablecer servicios o logística": 9,
+    "Facilitar trámites": 2
+   },
+   "base_apo": 111,
+   "apo": {
+    "Nuevo crédito": 17,
+    "Capital semilla o no reembolsable": 54,
+    "Alivio de obligaciones actuales": 39,
+    "No requiere apoyo": 2
+   },
+   "tam": {
+    "Microempresa": 136,
+    "Pequeña": 4
+   },
+   "tipo": "Registrado a nombre de persona natural",
+   "pct_universo": 8.9,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 127
+    },
+    {
+     "municipio": "Dagua",
+     "n": 6
+    },
+    {
+     "municipio": "Yumbo",
+     "n": 5
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 5
+    },
+    {
+     "municipio": "Jamundi",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "n": 138,
+   "critica": 48,
+   "grave": 47,
+   "moderada": 26,
+   "baja": 7,
+   "no_afectado": 1,
+   "sin_clasif": 9,
+   "sev": 95,
+   "pct_sev": 68.8,
+   "base_clasif": 129,
+   "pct_sev_clasif": 73.6,
+   "base_cont": 106,
+   "normal": 24,
+   "parcial": 42,
+   "no_opera": 40,
+   "pct_normal": 22.6,
+   "pct_parcial": 39.6,
+   "pct_no_opera": 37.7,
+   "pct_restriccion": 77.4,
+   "base_perd": 125,
+   "perd_min": 3110,
+   "perd_ab": 21,
+   "pct_perd_alta": 48.0,
+   "base_empl": 103,
+   "con_empleo": 86,
+   "pct_empleo": 83.5,
+   "base_reg": 124,
+   "registrada": 123,
+   "pct_registrada": 99.2,
+   "base_dano": 128,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 115,
+    "Inventarios o mercancías": 32,
+    "Proveedores, logística o servicios públicos": 17,
+    "Reducción de clientes, pedidos o ventas": 55,
+    "Restricción de acceso al establecimiento": 3
+   },
+   "base_nec": 135,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 45,
+    "Facilitar trámites": 15,
+    "Recuperar clientes y ventas": 51,
+    "Reparar instalaciones, maquinaria o equipos": 93,
+    "Restablecer servicios o logística": 9
+   },
+   "base_apo": 82,
+   "apo": {
+    "Alivio de obligaciones actuales": 37,
+    "Capital semilla o no reembolsable": 53,
+    "Nuevo crédito": 17,
+    "No requiere apoyo": 4
+   },
+   "tam": {
+    "Microempresa": 124,
+    "Pequeña": 10,
+    "Grande": 1,
+    "Mediana": 1
+   },
+   "tipo": "Alojamiento",
+   "pct_universo": 7.5,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 24
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 12
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 11
+    },
+    {
+     "municipio": "Cartago",
+     "n": 10
+    },
+    {
+     "municipio": "Alcala",
+     "n": 9
+    }
+   ],
+   "pct_tipificables": 19.8
+  },
+  {
+   "n": 98,
+   "critica": 27,
+   "grave": 28,
+   "moderada": 22,
+   "baja": 9,
+   "no_afectado": 2,
+   "sin_clasif": 10,
+   "sev": 55,
+   "pct_sev": 56.1,
+   "base_clasif": 88,
+   "pct_sev_clasif": 62.5,
+   "base_cont": 82,
+   "normal": 26,
+   "parcial": 27,
+   "no_opera": 29,
+   "pct_normal": 31.7,
+   "pct_parcial": 32.9,
+   "pct_no_opera": 35.4,
+   "pct_restriccion": 68.3,
+   "base_perd": 85,
+   "perd_min": 575,
+   "perd_ab": 0,
+   "pct_perd_alta": 24.7,
+   "base_empl": 77,
+   "con_empleo": 61,
+   "pct_empleo": 79.2,
+   "base_reg": 90,
+   "registrada": 88,
+   "pct_registrada": 97.8,
+   "base_dano": 90,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 69,
+    "Inventarios o mercancías": 43,
+    "Reducción de clientes, pedidos o ventas": 35,
+    "Proveedores, logística o servicios públicos": 12,
+    "Restricción de acceso al establecimiento": 1
+   },
+   "base_nec": 95,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 56,
+    "Capital de trabajo, inventarios o insumos": 37,
+    "Facilitar trámites": 10,
+    "Recuperar clientes y ventas": 30,
+    "Restablecer servicios o logística": 8
+   },
+   "base_apo": 51,
+   "apo": {
+    "Alivio de obligaciones actuales": 18,
+    "Capital semilla o no reembolsable": 31,
+    "Nuevo crédito": 5,
+    "No requiere apoyo": 1
+   },
+   "tam": {
+    "Microempresa": 82,
+    "Pequeña": 8,
+    "Grande": 2
+   },
+   "tipo": "Cafes, panaderias y heladerias",
+   "pct_universo": 5.3,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 20
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 13
+    },
+    {
+     "municipio": "Cartago",
+     "n": 13
+    },
+    {
+     "municipio": "Ansermanuevo",
+     "n": 5
+    },
+    {
+     "municipio": "Caicedonia",
+     "n": 5
+    }
+   ],
+   "pct_tipificables": 14.1
+  },
+  {
+   "n": 85,
+   "critica": 22,
+   "grave": 25,
+   "moderada": 24,
+   "baja": 5,
+   "no_afectado": 0,
+   "sin_clasif": 9,
+   "sev": 47,
+   "pct_sev": 55.3,
+   "base_clasif": 76,
+   "pct_sev_clasif": 61.8,
+   "base_cont": 71,
+   "normal": 23,
+   "parcial": 26,
+   "no_opera": 22,
+   "pct_normal": 32.4,
+   "pct_parcial": 36.6,
+   "pct_no_opera": 31.0,
+   "pct_restriccion": 67.6,
+   "base_perd": 78,
+   "perd_min": 405,
+   "perd_ab": 0,
+   "pct_perd_alta": 15.4,
+   "base_empl": 69,
+   "con_empleo": 56,
+   "pct_empleo": 81.2,
+   "base_reg": 79,
+   "registrada": 77,
+   "pct_registrada": 97.5,
+   "base_dano": 76,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 54,
+    "Inventarios o mercancías": 46,
+    "Reducción de clientes, pedidos o ventas": 39,
+    "Proveedores, logística o servicios públicos": 13,
+    "Restricción de acceso al establecimiento": 1
+   },
+   "base_nec": 80,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 50,
+    "Recuperar clientes y ventas": 25,
+    "Reparar instalaciones, maquinaria o equipos": 34,
+    "Restablecer servicios o logística": 7,
+    "Facilitar trámites": 5
+   },
+   "base_apo": 53,
+   "apo": {
+    "Capital semilla o no reembolsable": 33,
+    "Alivio de obligaciones actuales": 19,
+    "Nuevo crédito": 6,
+    "No requiere apoyo": 1
+   },
+   "tam": {
+    "Microempresa": 78,
+    "Pequeña": 3,
+    "Grande": 1
+   },
+   "tipo": "Bares y entretenimiento nocturno",
+   "pct_universo": 4.6,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 26
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 6
+    },
+    {
+     "municipio": "Sevilla",
+     "n": 5
+    },
+    {
+     "municipio": "Ansermanuevo",
+     "n": 5
+    },
+    {
+     "municipio": "Ulloa",
+     "n": 4
+    }
+   ],
+   "pct_tipificables": 12.2
+  },
+  {
+   "n": 28,
+   "critica": 6,
+   "grave": 10,
+   "moderada": 3,
+   "baja": 5,
+   "no_afectado": 0,
+   "sin_clasif": 4,
+   "sev": 16,
+   "pct_sev": 57.1,
+   "base_clasif": 24,
+   "pct_sev_clasif": 66.7,
+   "base_cont": 22,
+   "normal": 8,
+   "parcial": 9,
+   "no_opera": 5,
+   "pct_normal": 36.4,
+   "pct_parcial": 40.9,
+   "pct_no_opera": 22.7,
+   "pct_restriccion": 63.6,
+   "base_perd": 25,
+   "perd_min": 310,
+   "perd_ab": 1,
+   "pct_perd_alta": 36.0,
+   "base_empl": 22,
+   "con_empleo": 16,
+   "pct_empleo": 72.7,
+   "base_reg": 25,
+   "registrada": 25,
+   "pct_registrada": 100.0,
+   "base_dano": 26,
+   "dano": {
+    "Reducción de clientes, pedidos o ventas": 13,
+    "Proveedores, logística o servicios públicos": 5,
+    "Infraestructura, maquinaria o equipos": 13
+   },
+   "base_nec": 26,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 6,
+    "Recuperar clientes y ventas": 11,
+    "Reparar instalaciones, maquinaria o equipos": 10,
+    "Restablecer servicios o logística": 3,
+    "Facilitar trámites": 1
+   },
+   "base_apo": 18,
+   "apo": {
+    "Nuevo crédito": 6,
+    "Alivio de obligaciones actuales": 6,
+    "Capital semilla o no reembolsable": 8
+   },
+   "tam": {
+    "Microempresa": 16,
+    "Pequeña": 8,
+    "Mediana": 3
+   },
+   "tipo": "Transporte de pasajeros",
+   "pct_universo": 1.5,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 12
+    },
+    {
+     "municipio": "Yumbo",
+     "n": 3
+    },
+    {
+     "municipio": "Jamundi",
+     "n": 2
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 2
+    },
+    {
+     "municipio": "Buga",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 4.0
+  },
+  {
+   "n": 18,
+   "critica": 3,
+   "grave": 10,
+   "moderada": 3,
+   "baja": 0,
+   "no_afectado": 0,
+   "sin_clasif": 2,
+   "sev": 13,
+   "pct_sev": 72.2,
+   "base_clasif": 16,
+   "pct_sev_clasif": 81.2,
+   "base_cont": 15,
+   "normal": 2,
+   "parcial": 10,
+   "no_opera": 3,
+   "pct_normal": 13.3,
+   "pct_parcial": 66.7,
+   "pct_no_opera": 20.0,
+   "pct_restriccion": 86.7,
+   "base_perd": 15,
+   "perd_min": 285,
+   "perd_ab": 2,
+   "pct_perd_alta": 26.7,
+   "base_empl": 14,
+   "con_empleo": 11,
+   "pct_empleo": 78.6,
+   "base_reg": 18,
+   "registrada": 17,
+   "pct_registrada": 94.4,
+   "base_dano": 17,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 15,
+    "Inventarios o mercancías": 3,
+    "Reducción de clientes, pedidos o ventas": 6,
+    "Proveedores, logística o servicios públicos": 1
+   },
+   "base_nec": 17,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 5,
+    "Reparar instalaciones, maquinaria o equipos": 14,
+    "Recuperar clientes y ventas": 6,
+    "Facilitar trámites": 2
+   },
+   "base_apo": 10,
+   "apo": {
+    "Capital semilla o no reembolsable": 7,
+    "Alivio de obligaciones actuales": 5,
+    "Nuevo crédito": 1
+   },
+   "tam": {
+    "Microempresa": 16,
+    "Pequeña": 1
+   },
+   "tipo": "Atractivos y recreacion",
+   "pct_universo": 1.0,
+   "top_mun": [
+    {
+     "municipio": "Roldanillo",
+     "n": 4
+    },
+    {
+     "municipio": "Riofrio",
+     "n": 2
+    },
+    {
+     "municipio": "Cali",
+     "n": 2
+    },
+    {
+     "municipio": "Yotoco",
+     "n": 2
+    },
+    {
+     "municipio": "Bolivar",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 2.6
+  },
+  {
+   "n": 14,
+   "critica": 5,
+   "grave": 5,
+   "moderada": 1,
+   "baja": 0,
+   "no_afectado": 0,
+   "sin_clasif": 3,
+   "sev": 10,
+   "pct_sev": 71.4,
+   "base_clasif": 11,
+   "pct_sev_clasif": 90.9,
+   "base_cont": 14,
+   "normal": 2,
+   "parcial": 9,
+   "no_opera": 3,
+   "pct_normal": 14.3,
+   "pct_parcial": 64.3,
+   "pct_no_opera": 21.4,
+   "pct_restriccion": 85.7,
+   "base_perd": 11,
+   "perd_min": 105,
+   "perd_ab": 0,
+   "pct_perd_alta": 36.4,
+   "base_empl": 14,
+   "con_empleo": 13,
+   "pct_empleo": 92.9,
+   "base_reg": 12,
+   "registrada": 12,
+   "pct_registrada": 100.0,
+   "base_dano": 11,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 9,
+    "Inventarios o mercancías": 6,
+    "Proveedores, logística o servicios públicos": 3,
+    "Reducción de clientes, pedidos o ventas": 5
+   },
+   "base_nec": 12,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 7,
+    "Restablecer servicios o logística": 3,
+    "Recuperar clientes y ventas": 8,
+    "Capital de trabajo, inventarios o insumos": 5,
+    "Facilitar trámites": 2
+   },
+   "base_apo": 5,
+   "apo": {
+    "Capital semilla o no reembolsable": 3,
+    "Alivio de obligaciones actuales": 4,
+    "Nuevo crédito": 1
+   },
+   "tam": {
+    "Microempresa": 14
+   },
+   "tipo": "Agencias y operadores turisticos",
+   "pct_universo": 0.8,
+   "top_mun": [
+    {
+     "municipio": "Roldanillo",
+     "n": 3
+    },
+    {
+     "municipio": "Cali",
+     "n": 3
+    },
+    {
+     "municipio": "Riofrio",
+     "n": 2
+    },
+    {
+     "municipio": "Ansermanuevo",
+     "n": 1
+    },
+    {
+     "municipio": "Calima",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 2.0
+  },
+  {
+   "n": 13,
+   "critica": 5,
+   "grave": 6,
+   "moderada": 1,
+   "baja": 0,
+   "no_afectado": 0,
+   "sin_clasif": 1,
+   "sev": 11,
+   "pct_sev": 84.6,
+   "base_clasif": 12,
+   "pct_sev_clasif": 91.7,
+   "base_cont": 11,
+   "normal": 0,
+   "parcial": 7,
+   "no_opera": 4,
+   "pct_normal": 0.0,
+   "pct_parcial": 63.6,
+   "pct_no_opera": 36.4,
+   "pct_restriccion": 100.0,
+   "base_perd": 12,
+   "perd_min": 205,
+   "perd_ab": 1,
+   "pct_perd_alta": 41.7,
+   "base_empl": 11,
+   "con_empleo": 10,
+   "pct_empleo": 90.9,
+   "base_reg": 13,
+   "registrada": 12,
+   "pct_registrada": 92.3,
+   "base_dano": 13,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 10,
+    "Inventarios o mercancías": 7,
+    "Proveedores, logística o servicios públicos": 2,
+    "Reducción de clientes, pedidos o ventas": 7
+   },
+   "base_nec": 13,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 10,
+    "Capital de trabajo, inventarios o insumos": 5,
+    "Facilitar trámites": 1,
+    "Recuperar clientes y ventas": 5,
+    "Restablecer servicios o logística": 2
+   },
+   "base_apo": 8,
+   "apo": {
+    "Alivio de obligaciones actuales": 4,
+    "Capital semilla o no reembolsable": 3,
+    "Nuevo crédito": 3
+   },
+   "tam": {
+    "Microempresa": 10,
+    "Pequeña": 2
+   },
+   "tipo": "Eventos y banquetes",
+   "pct_universo": 0.7,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 4
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 2
+    },
+    {
+     "municipio": "Dagua",
+     "n": 1
+    },
+    {
+     "municipio": "Jamundi",
+     "n": 1
+    },
+    {
+     "municipio": "Buga",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 1.9
+  }
+ ],
+ "tipificables": [
+  {
+   "n": 303,
+   "critica": 85,
+   "grave": 104,
+   "moderada": 64,
+   "baja": 25,
+   "no_afectado": 2,
+   "sin_clasif": 23,
+   "sev": 189,
+   "pct_sev": 62.4,
+   "base_clasif": 280,
+   "pct_sev_clasif": 67.5,
+   "base_cont": 243,
+   "normal": 59,
+   "parcial": 90,
+   "no_opera": 94,
+   "pct_normal": 24.3,
+   "pct_parcial": 37.0,
+   "pct_no_opera": 38.7,
+   "pct_restriccion": 75.7,
+   "base_perd": 266,
+   "perd_min": 2740,
+   "perd_ab": 12,
+   "pct_perd_alta": 22.9,
+   "base_empl": 221,
+   "con_empleo": 182,
+   "pct_empleo": 82.4,
+   "base_reg": 270,
+   "registrada": 245,
+   "pct_registrada": 90.7,
+   "base_dano": 285,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 226,
+    "Inventarios o mercancías": 131,
+    "Reducción de clientes, pedidos o ventas": 120,
+    "Restricción de acceso al establecimiento": 8,
+    "Proveedores, logística o servicios públicos": 53
+   },
+   "base_nec": 284,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 162,
+    "Capital de trabajo, inventarios o insumos": 132,
+    "Recuperar clientes y ventas": 75,
+    "Facilitar trámites": 16,
+    "Restablecer servicios o logística": 24
+   },
+   "base_apo": 145,
+   "apo": {
+    "Capital semilla o no reembolsable": 108,
+    "Alivio de obligaciones actuales": 43,
+    "Nuevo crédito": 21,
+    "No requiere apoyo": 5
+   },
+   "tam": {
+    "Microempresa": 261,
+    "Pequeña": 18,
+    "Mediana": 7,
+    "Grande": 2
+   },
+   "tipo": "Restaurantes y comidas",
+   "pct_universo": 16.5,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 82
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 36
+    },
+    {
+     "municipio": "Cartago",
+     "n": 22
+    },
+    {
+     "municipio": "Calima",
+     "n": 17
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 13
+    }
+   ],
+   "pct_tipificables": 43.5
+  },
+  {
+   "n": 138,
+   "critica": 48,
+   "grave": 47,
+   "moderada": 26,
+   "baja": 7,
+   "no_afectado": 1,
+   "sin_clasif": 9,
+   "sev": 95,
+   "pct_sev": 68.8,
+   "base_clasif": 129,
+   "pct_sev_clasif": 73.6,
+   "base_cont": 106,
+   "normal": 24,
+   "parcial": 42,
+   "no_opera": 40,
+   "pct_normal": 22.6,
+   "pct_parcial": 39.6,
+   "pct_no_opera": 37.7,
+   "pct_restriccion": 77.4,
+   "base_perd": 125,
+   "perd_min": 3110,
+   "perd_ab": 21,
+   "pct_perd_alta": 48.0,
+   "base_empl": 103,
+   "con_empleo": 86,
+   "pct_empleo": 83.5,
+   "base_reg": 124,
+   "registrada": 123,
+   "pct_registrada": 99.2,
+   "base_dano": 128,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 115,
+    "Inventarios o mercancías": 32,
+    "Proveedores, logística o servicios públicos": 17,
+    "Reducción de clientes, pedidos o ventas": 55,
+    "Restricción de acceso al establecimiento": 3
+   },
+   "base_nec": 135,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 45,
+    "Facilitar trámites": 15,
+    "Recuperar clientes y ventas": 51,
+    "Reparar instalaciones, maquinaria o equipos": 93,
+    "Restablecer servicios o logística": 9
+   },
+   "base_apo": 82,
+   "apo": {
+    "Alivio de obligaciones actuales": 37,
+    "Capital semilla o no reembolsable": 53,
+    "Nuevo crédito": 17,
+    "No requiere apoyo": 4
+   },
+   "tam": {
+    "Microempresa": 124,
+    "Pequeña": 10,
+    "Grande": 1,
+    "Mediana": 1
+   },
+   "tipo": "Alojamiento",
+   "pct_universo": 7.5,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 24
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 12
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 11
+    },
+    {
+     "municipio": "Cartago",
+     "n": 10
+    },
+    {
+     "municipio": "Alcala",
+     "n": 9
+    }
+   ],
+   "pct_tipificables": 19.8
+  },
+  {
+   "n": 98,
+   "critica": 27,
+   "grave": 28,
+   "moderada": 22,
+   "baja": 9,
+   "no_afectado": 2,
+   "sin_clasif": 10,
+   "sev": 55,
+   "pct_sev": 56.1,
+   "base_clasif": 88,
+   "pct_sev_clasif": 62.5,
+   "base_cont": 82,
+   "normal": 26,
+   "parcial": 27,
+   "no_opera": 29,
+   "pct_normal": 31.7,
+   "pct_parcial": 32.9,
+   "pct_no_opera": 35.4,
+   "pct_restriccion": 68.3,
+   "base_perd": 85,
+   "perd_min": 575,
+   "perd_ab": 0,
+   "pct_perd_alta": 24.7,
+   "base_empl": 77,
+   "con_empleo": 61,
+   "pct_empleo": 79.2,
+   "base_reg": 90,
+   "registrada": 88,
+   "pct_registrada": 97.8,
+   "base_dano": 90,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 69,
+    "Inventarios o mercancías": 43,
+    "Reducción de clientes, pedidos o ventas": 35,
+    "Proveedores, logística o servicios públicos": 12,
+    "Restricción de acceso al establecimiento": 1
+   },
+   "base_nec": 95,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 56,
+    "Capital de trabajo, inventarios o insumos": 37,
+    "Facilitar trámites": 10,
+    "Recuperar clientes y ventas": 30,
+    "Restablecer servicios o logística": 8
+   },
+   "base_apo": 51,
+   "apo": {
+    "Alivio de obligaciones actuales": 18,
+    "Capital semilla o no reembolsable": 31,
+    "Nuevo crédito": 5,
+    "No requiere apoyo": 1
+   },
+   "tam": {
+    "Microempresa": 82,
+    "Pequeña": 8,
+    "Grande": 2
+   },
+   "tipo": "Cafes, panaderias y heladerias",
+   "pct_universo": 5.3,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 20
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 13
+    },
+    {
+     "municipio": "Cartago",
+     "n": 13
+    },
+    {
+     "municipio": "Ansermanuevo",
+     "n": 5
+    },
+    {
+     "municipio": "Caicedonia",
+     "n": 5
+    }
+   ],
+   "pct_tipificables": 14.1
+  },
+  {
+   "n": 85,
+   "critica": 22,
+   "grave": 25,
+   "moderada": 24,
+   "baja": 5,
+   "no_afectado": 0,
+   "sin_clasif": 9,
+   "sev": 47,
+   "pct_sev": 55.3,
+   "base_clasif": 76,
+   "pct_sev_clasif": 61.8,
+   "base_cont": 71,
+   "normal": 23,
+   "parcial": 26,
+   "no_opera": 22,
+   "pct_normal": 32.4,
+   "pct_parcial": 36.6,
+   "pct_no_opera": 31.0,
+   "pct_restriccion": 67.6,
+   "base_perd": 78,
+   "perd_min": 405,
+   "perd_ab": 0,
+   "pct_perd_alta": 15.4,
+   "base_empl": 69,
+   "con_empleo": 56,
+   "pct_empleo": 81.2,
+   "base_reg": 79,
+   "registrada": 77,
+   "pct_registrada": 97.5,
+   "base_dano": 76,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 54,
+    "Inventarios o mercancías": 46,
+    "Reducción de clientes, pedidos o ventas": 39,
+    "Proveedores, logística o servicios públicos": 13,
+    "Restricción de acceso al establecimiento": 1
+   },
+   "base_nec": 80,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 50,
+    "Recuperar clientes y ventas": 25,
+    "Reparar instalaciones, maquinaria o equipos": 34,
+    "Restablecer servicios o logística": 7,
+    "Facilitar trámites": 5
+   },
+   "base_apo": 53,
+   "apo": {
+    "Capital semilla o no reembolsable": 33,
+    "Alivio de obligaciones actuales": 19,
+    "Nuevo crédito": 6,
+    "No requiere apoyo": 1
+   },
+   "tam": {
+    "Microempresa": 78,
+    "Pequeña": 3,
+    "Grande": 1
+   },
+   "tipo": "Bares y entretenimiento nocturno",
+   "pct_universo": 4.6,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 26
+    },
+    {
+     "municipio": "Roldanillo",
+     "n": 6
+    },
+    {
+     "municipio": "Sevilla",
+     "n": 5
+    },
+    {
+     "municipio": "Ansermanuevo",
+     "n": 5
+    },
+    {
+     "municipio": "Ulloa",
+     "n": 4
+    }
+   ],
+   "pct_tipificables": 12.2
+  },
+  {
+   "n": 28,
+   "critica": 6,
+   "grave": 10,
+   "moderada": 3,
+   "baja": 5,
+   "no_afectado": 0,
+   "sin_clasif": 4,
+   "sev": 16,
+   "pct_sev": 57.1,
+   "base_clasif": 24,
+   "pct_sev_clasif": 66.7,
+   "base_cont": 22,
+   "normal": 8,
+   "parcial": 9,
+   "no_opera": 5,
+   "pct_normal": 36.4,
+   "pct_parcial": 40.9,
+   "pct_no_opera": 22.7,
+   "pct_restriccion": 63.6,
+   "base_perd": 25,
+   "perd_min": 310,
+   "perd_ab": 1,
+   "pct_perd_alta": 36.0,
+   "base_empl": 22,
+   "con_empleo": 16,
+   "pct_empleo": 72.7,
+   "base_reg": 25,
+   "registrada": 25,
+   "pct_registrada": 100.0,
+   "base_dano": 26,
+   "dano": {
+    "Reducción de clientes, pedidos o ventas": 13,
+    "Proveedores, logística o servicios públicos": 5,
+    "Infraestructura, maquinaria o equipos": 13
+   },
+   "base_nec": 26,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 6,
+    "Recuperar clientes y ventas": 11,
+    "Reparar instalaciones, maquinaria o equipos": 10,
+    "Restablecer servicios o logística": 3,
+    "Facilitar trámites": 1
+   },
+   "base_apo": 18,
+   "apo": {
+    "Nuevo crédito": 6,
+    "Alivio de obligaciones actuales": 6,
+    "Capital semilla o no reembolsable": 8
+   },
+   "tam": {
+    "Microempresa": 16,
+    "Pequeña": 8,
+    "Mediana": 3
+   },
+   "tipo": "Transporte de pasajeros",
+   "pct_universo": 1.5,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 12
+    },
+    {
+     "municipio": "Yumbo",
+     "n": 3
+    },
+    {
+     "municipio": "Jamundi",
+     "n": 2
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 2
+    },
+    {
+     "municipio": "Buga",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 4.0
+  },
+  {
+   "n": 18,
+   "critica": 3,
+   "grave": 10,
+   "moderada": 3,
+   "baja": 0,
+   "no_afectado": 0,
+   "sin_clasif": 2,
+   "sev": 13,
+   "pct_sev": 72.2,
+   "base_clasif": 16,
+   "pct_sev_clasif": 81.2,
+   "base_cont": 15,
+   "normal": 2,
+   "parcial": 10,
+   "no_opera": 3,
+   "pct_normal": 13.3,
+   "pct_parcial": 66.7,
+   "pct_no_opera": 20.0,
+   "pct_restriccion": 86.7,
+   "base_perd": 15,
+   "perd_min": 285,
+   "perd_ab": 2,
+   "pct_perd_alta": 26.7,
+   "base_empl": 14,
+   "con_empleo": 11,
+   "pct_empleo": 78.6,
+   "base_reg": 18,
+   "registrada": 17,
+   "pct_registrada": 94.4,
+   "base_dano": 17,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 15,
+    "Inventarios o mercancías": 3,
+    "Reducción de clientes, pedidos o ventas": 6,
+    "Proveedores, logística o servicios públicos": 1
+   },
+   "base_nec": 17,
+   "nec": {
+    "Capital de trabajo, inventarios o insumos": 5,
+    "Reparar instalaciones, maquinaria o equipos": 14,
+    "Recuperar clientes y ventas": 6,
+    "Facilitar trámites": 2
+   },
+   "base_apo": 10,
+   "apo": {
+    "Capital semilla o no reembolsable": 7,
+    "Alivio de obligaciones actuales": 5,
+    "Nuevo crédito": 1
+   },
+   "tam": {
+    "Microempresa": 16,
+    "Pequeña": 1
+   },
+   "tipo": "Atractivos y recreacion",
+   "pct_universo": 1.0,
+   "top_mun": [
+    {
+     "municipio": "Roldanillo",
+     "n": 4
+    },
+    {
+     "municipio": "Riofrio",
+     "n": 2
+    },
+    {
+     "municipio": "Cali",
+     "n": 2
+    },
+    {
+     "municipio": "Yotoco",
+     "n": 2
+    },
+    {
+     "municipio": "Bolivar",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 2.6
+  },
+  {
+   "n": 14,
+   "critica": 5,
+   "grave": 5,
+   "moderada": 1,
+   "baja": 0,
+   "no_afectado": 0,
+   "sin_clasif": 3,
+   "sev": 10,
+   "pct_sev": 71.4,
+   "base_clasif": 11,
+   "pct_sev_clasif": 90.9,
+   "base_cont": 14,
+   "normal": 2,
+   "parcial": 9,
+   "no_opera": 3,
+   "pct_normal": 14.3,
+   "pct_parcial": 64.3,
+   "pct_no_opera": 21.4,
+   "pct_restriccion": 85.7,
+   "base_perd": 11,
+   "perd_min": 105,
+   "perd_ab": 0,
+   "pct_perd_alta": 36.4,
+   "base_empl": 14,
+   "con_empleo": 13,
+   "pct_empleo": 92.9,
+   "base_reg": 12,
+   "registrada": 12,
+   "pct_registrada": 100.0,
+   "base_dano": 11,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 9,
+    "Inventarios o mercancías": 6,
+    "Proveedores, logística o servicios públicos": 3,
+    "Reducción de clientes, pedidos o ventas": 5
+   },
+   "base_nec": 12,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 7,
+    "Restablecer servicios o logística": 3,
+    "Recuperar clientes y ventas": 8,
+    "Capital de trabajo, inventarios o insumos": 5,
+    "Facilitar trámites": 2
+   },
+   "base_apo": 5,
+   "apo": {
+    "Capital semilla o no reembolsable": 3,
+    "Alivio de obligaciones actuales": 4,
+    "Nuevo crédito": 1
+   },
+   "tam": {
+    "Microempresa": 14
+   },
+   "tipo": "Agencias y operadores turisticos",
+   "pct_universo": 0.8,
+   "top_mun": [
+    {
+     "municipio": "Roldanillo",
+     "n": 3
+    },
+    {
+     "municipio": "Cali",
+     "n": 3
+    },
+    {
+     "municipio": "Riofrio",
+     "n": 2
+    },
+    {
+     "municipio": "Ansermanuevo",
+     "n": 1
+    },
+    {
+     "municipio": "Calima",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 2.0
+  },
+  {
+   "n": 13,
+   "critica": 5,
+   "grave": 6,
+   "moderada": 1,
+   "baja": 0,
+   "no_afectado": 0,
+   "sin_clasif": 1,
+   "sev": 11,
+   "pct_sev": 84.6,
+   "base_clasif": 12,
+   "pct_sev_clasif": 91.7,
+   "base_cont": 11,
+   "normal": 0,
+   "parcial": 7,
+   "no_opera": 4,
+   "pct_normal": 0.0,
+   "pct_parcial": 63.6,
+   "pct_no_opera": 36.4,
+   "pct_restriccion": 100.0,
+   "base_perd": 12,
+   "perd_min": 205,
+   "perd_ab": 1,
+   "pct_perd_alta": 41.7,
+   "base_empl": 11,
+   "con_empleo": 10,
+   "pct_empleo": 90.9,
+   "base_reg": 13,
+   "registrada": 12,
+   "pct_registrada": 92.3,
+   "base_dano": 13,
+   "dano": {
+    "Infraestructura, maquinaria o equipos": 10,
+    "Inventarios o mercancías": 7,
+    "Proveedores, logística o servicios públicos": 2,
+    "Reducción de clientes, pedidos o ventas": 7
+   },
+   "base_nec": 13,
+   "nec": {
+    "Reparar instalaciones, maquinaria o equipos": 10,
+    "Capital de trabajo, inventarios o insumos": 5,
+    "Facilitar trámites": 1,
+    "Recuperar clientes y ventas": 5,
+    "Restablecer servicios o logística": 2
+   },
+   "base_apo": 8,
+   "apo": {
+    "Alivio de obligaciones actuales": 4,
+    "Capital semilla o no reembolsable": 3,
+    "Nuevo crédito": 3
+   },
+   "tam": {
+    "Microempresa": 10,
+    "Pequeña": 2
+   },
+   "tipo": "Eventos y banquetes",
+   "pct_universo": 0.7,
+   "top_mun": [
+    {
+     "municipio": "Cali",
+     "n": 4
+    },
+    {
+     "municipio": "Buenaventura",
+     "n": 2
+    },
+    {
+     "municipio": "Dagua",
+     "n": 1
+    },
+    {
+     "municipio": "Jamundi",
+     "n": 1
+    },
+    {
+     "municipio": "Buga",
+     "n": 1
+    }
+   ],
+   "pct_tipificables": 1.9
+  }
+ ],
+ "base_tipo": 697,
+ "sin_tipificar": {
+  "Sin clasificar": 979,
+  "Registrado a nombre de persona natural": 163
+ },
+ "secretaria": {
+  "universo": 15817,
+  "criticos": 3441,
+  "sev": 8634,
+  "pct_sev_clasif": 62.6,
+  "base_clasif": 13793,
+  "sin_operacion": 3583,
+  "pct_no_opera": 28.4,
+  "parcial": 5325,
+  "pct_parcial": 42.2,
+  "normal": 3721,
+  "pct_normal": 29.5,
+  "base_cont": 12629,
+  "formalizadas_ccc": 11032,
+  "pct_formal": 69.7,
+  "turismo_pct": 16,
+  "turismo_equiv": 2531,
+  "nota": "Corte 15 de septiembre, sin depuración de doble notificación. El renglón de turismo es «Alojamiento, gastronomía y turismo», una agrupación más amplia que la cadena de valor usada aquí."
+ }
+}

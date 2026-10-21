@@ -14,6 +14,21 @@ GeoTurismo responde estas preguntas combinando datos PostGIS, visualizaciones in
 
 ---
 
+---
+
+## Análisis e informes del sector (antes `observatorios/turismo`)
+
+Desde el 2026-10-19 GeoTurismo también reúne los análisis con datos reales del sector turismo
+(RNT, reportes de la emergencia sísmica de agosto de 2026, 42 municipios):
+
+- `analisis/`: scripts y resultados (impacto del sismo, impacto económico, orientación de ayuda,
+  cadena de valor RNT, agroturismo ICETEX). Ver `analisis/README.md`.
+- `informes/`: la versión final de cada entregable (docx, pdf, pptx, xlsx).
+- `archivo/`: versiones anteriores, fuera de git.
+
+Los datos del dashboard y del chatbot (`scripts/seed_db.py`) todavía son valores de referencia escritos a mano
+para 29 municipios; el siguiente paso es alimentarlos desde el RNT.
+
 ## Arquitectura general
 
 ```
